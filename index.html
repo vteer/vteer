@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>首页</title>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--顶部-->
+<div class="top">
+    <div class="logo">
+        <a href="">
+            <img src="images/header_logo.png" alt="a"/>
+        </a>
+    </div>
+    <div class="download">
+        <a href="">
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+</div>
+<!--搜索-->
+<div class="search ">
+
+    <input type="text" placeholder="   要买啥?" class="inputbox"/>
+    <input type="button" class="searchbutton  " value="search"/>
+</div>
+
+
+
+<!--导航-->
+<div id="menu">
+
+</div>
+
+<!--底部-->
+<div class="recommend ">
+    <span>超值折扣推荐</span>
+</div>
+<div class="product-list"></div>
+
+
+<div class="brand ">
+    <span>品牌排行</span>
+</div>
+<div class="fenglei">
+    <a href="">登陆</a>
+    <a href="">注册</a>
+    <a href="">返回顶部</a>
+</div>
+<div class="tail">
+    <p><a href="">手机APP下载 慢慢买手机版</a> -- 掌上比价平台</p>
+    <p>m.manmanbuy.com</p>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/packaging.js"></script>
+<script src="js/01-index.js"></script>
+<script id='moneyCtrl' type="text/html">
+<div class="row">
+            {{each result as value i}}
+            <li class="menu-item">
+                <a href="{{value.titlehref}}">
+                    {{#value.img}}
+                    <p>{{value.name}}</p>
+                </a>
+            </li>
+            {{/each}}
+</div>
+</script>
+
+
+<script id='moneyCtrl1' type="text/html">
+    <div class="Classify">
+       <ul>
+         {{each result as value i}}
+           <li class="Classify">
+             <a href="moneyproduct.html?productid={{value.productId}}">
+                <div class="pic">{{#value.productImgSm}}</div>
+                <div class="right">
+                   <div class="annotation">{{value.productName}}<span>{{value.productPinkage}}</span></div>
+                   <div class="time">
+                       <span>{{value.productFrom}} | {{value.productTime}}</span>
+                       <span class="pinglun">
+                         <i></i>
+                         {{value.productComCount.replace("有","").replace("人评论","")}}
+                       </span>
+                   </div>
+                </div>
+             </a>
+           </li>
+         {{/each}}
+       </ul>
+    </div>
+    <div class="favorable">
+        <a href="moneyctrl.html">更多优惠信息>></a>
+    </div>
+
+</script>
+</html>

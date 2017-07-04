@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>分类</title>
+    <link rel="stylesheet" href="css/category.css"/>
+</head>
+<body>
+<!--顶部-->
+<div class="top">
+    <div class="logo">
+        <a href="">
+            <img src="images/header_logo.png" alt="a"/>
+        </a>
+    </div>
+    <div class="download">
+        <a href="">
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+</div>
+<!--搜索-->
+<div class="search ">
+    <input type="text" placeholder="   要买啥?" class="inputbox"/>
+    <input type="button" class="searchbutton  " value="search"/>
+</div>
+
+<div class="household"></div>
+
+<!--底部-->
+<div class="fenglei">
+    <a href="">登陆</a>
+    <a href="">注册</a>
+    <a href="">返回顶部</a>
+</div>
+<div class="tail">
+    <p><a href="">手机APP下载 慢慢买手机版</a> -- 掌上比价平台</p>
+    <p>m.manmanbuy.com</p>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/packaging.js"></script>
+<script src="js/02-Section%20headings.js"></script>
+<script id=moneyCtrl2 type=text/html>
+    <ul class="oneul">
+        {{each result as value i}}
+        <li class="oneli">
+            <a class="product-list" href="javascript:void(0)"  title="{{value.titleId}}">
+                {{value.title}}
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script id=moneyCtrl3 type="text/html">
+    <ul class="twoul">
+        {{each result as value i}}
+         <li class="twoli">
+             <a href="03-television.html?data-catId={{ value.categoryId }}">{{value.category}}</a>
+         </li>
+        {{/each}}
+    </ul>
+</script>
+</html>

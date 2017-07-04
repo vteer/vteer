@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li,
+ul {
+  list-style: none;
+}
+.top {
+  height: 44px;
+  background-color: #ff841d;
+  overflow: hidden;
+}
+.top .return {
+  width: 50px;
+  height: 44px;
+  float: left;
+}
+.top .return a {
+  width: 100%;
+  height: 44px;
+  background: url("../images/icon_bar.png") no-repeat;
+}
+.top .sheng {
+  max-width: 314px;
+}
+.top .sheng h1 {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+}
+.top .download {
+  float: right;
+  width: 50px;
+}
+.top .download a {
+  display: block;
+  width: 100%;
+  height: 39px;
+  background: url("../images/header_app.png") no-repeat;
+  background-size: 32px;
+  margin-top: 5px;
+}
+.discount-details {
+  background-color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  max-width: 960px;
+  margin: 0px auto;
+}
+.discount-details ul li {
+  padding: 14px 8px;
+}
+.discount-details ul li a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.discount-details ul li a .--pic {
+  float: left;
+  width: 110px;
+}
+.discount-details ul li a .--pic img {
+  width: 100px;
+  height: 100px;
+}
+.discount-details ul li a .biaoti {
+  color: #333333;
+  word-break: break-all;
+  font-size: 15px;
+  line-height: 19px;
+  min-height: 57px;
+  text-align: left;
+  font-weight: normal;
+}
+.discount-details ul li a .biaoti span {
+  color: red;
+}
+.discount-details ul li a .shangchang {
+  width: 100%;
+  color: #a1a1a1;
+  font-size: 12px;
+}
+.discount-details ul li a .shangchang .pinglun {
+  display: block;
+  float: right;
+  margin-right: 5px;
+}
+.paging {
+  overflow: hidden;
+}
+.paging ._top {
+  width: 33.3%;
+  float: left;
+}
+.paging ._top a {
+  display: block;
+  padding: 8px 10px;
+  border: 1px solid pink;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 3px;
+  border-radius: 8px;
+  margin-right: 25px;
+  color: black;
+  text-decoration: none;
+  background-color: #d4d4d4;
+}
+.paging .skip {
+  width: 33.3%;
+  text-align: center;
+  display: inline-block;
+}
+.paging .skip select {
+  border: 1px solid #bababa;
+  font-size: 16px;
+  padding: 8px 15px;
+  height: 36px;
+  margin-top: 5px;
+}
+.paging .bottom {
+  width: 33.3%;
+  float: right;
+}
+.paging .bottom a {
+  display: block;
+  text-align: center;
+  padding: 8px 10px;
+  border: 1px solid pink;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-bottom: 3px;
+  margin-left: 25px;
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+  background-color: #d4d4d4;
+}
+.fenglei {
+  width: 100%;
+  height: 34px;
+  margin-top: 30px;
+  border: 1px solid #000;
+  line-height: 34px;
+  border-left: none;
+}
+.fenglei a {
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+  border-left: 1px solid #000;
+  text-decoration: none;
+  color: #000;
+}
+.tail {
+  background-color: #c4c4c4;
+  height: 62px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.tail a {
+  color: red;
+  text-decoration: none;
+}
